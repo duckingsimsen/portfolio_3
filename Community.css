@@ -1,0 +1,199 @@
+*
+{
+    margin: 0;
+}
+body
+{
+    background-color: rgb(219, 236, 243);
+}
+#layout
+{
+    width: 70%;
+    min-width: 1080px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.Navigation_bar
+{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+.logo
+{
+    width: 10.8%;
+    height: 10.8%;
+}
+.club_img
+{
+    width: 100px;
+    height: 100px;
+}
+.menu
+{
+    width: 89.2%;
+}
+
+/*dropdown*/
+
+.menu .dropdown_1
+{
+    height: 50%;
+}
+
+.menu ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    background: #272727;
+}
+
+.menu ul li
+{
+    display: flex;
+    width: 100%;
+    line-height: 2.5;
+    justify-content: center;
+    position: relative;
+    list-style: none;
+}
+
+.menu ul li a
+{
+    color: #fff;
+    font-family: arial, Arial, Helvetica, sans-serif !important;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.menu li .dropdown_2 
+{
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    flex-wrap: wrap;
+    visibility: hidden;
+    transition: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.menu li:hover .dropdown_2
+{
+    visibility: visible;
+}
+
+.menu .dropdown_1 li .dropdown_3
+{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    flex-wrap: wrap;
+    transition: 0;
+    visibility: hidden;
+    z-index: 100;
+}
+
+.menu .dropdown_2 li:hover .dropdown_3
+{
+    left: 100%;
+    visibility: visible;
+}
+
+/*  */
+
+#main
+{
+    background-color: #fff;
+}
+
+#main .main_element
+{
+    padding: 10px 0 10px 0;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+}
+
+#main .sec_set
+{
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: inline-block;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+    top: 40px;
+}
+
+#sty
+{
+    margin: 30px 0 0 300px;
+    border: solid 1px;
+    width: 65%;
+    height: 14em;
+    text-align: left;
+    
+}
+
+
+#main .Menu_1
+{
+    border: solid 1px;
+    display: inline-block;
+}
+#table{
+    border: solid 1px;
+    font-size: 19px;
+    float: left;
+    position: relative;
+    top: 120px;
+    left: 70px;
+}
+
+#table > a {
+    color: #000000;
+}
+
+#main .Menu_2
+{
+    border: solid 1px;
+    float: left;
+    position: relative;
+    top: -60px;
+}
+
+#main .Menu_3 
+{
+    border: solid 1px;
+    display: inline-block;
+    position: relative;
+    top: -30px;
+}
+
+
+#footer
+{
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-left: 34px;
+    text-align: left;
+    background-color: #fff;
+    height: 100px;
+    padding: 10px 0 0 0;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+}

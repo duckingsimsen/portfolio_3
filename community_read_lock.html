@@ -1,0 +1,44 @@
+<?php 
+    require_once __DIR__ . '/db.php';
+    define('db', true);
+?>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script language='javascript'>
+            var factpw = prompt('비밀글입니다' + '\n' + '확인하실려면 비밀번호를 입력하세요');
+            document.cookie="pass=" + factpw;
+        </script>
+        
+        <?php
+            $bno = $_GET["idx"];
+
+            $getpw = "SELECT pw FROM club_table WHERE idx = '".$bno."';";
+            $sql_ = mysqli_query($db, $getpw);
+            $row = mysqli_fetch_array($sql_);
+            $hash = $row["pw"];
+
+            $sql_1 = "SELECT * FROM club_table WHERE idx = '".$bno."'";
+            $sql_2 = mysqli_query($db, $sql_1);
+            $board = $sql_2 -> fetch_array();
+
+            if(password_verify($_COOKIE['pass'], $hash))
+            {
+        ?>
+                <script type="text/javascript">location.replace("community_read.html?idx=<?php echo $board["idx"]; ?>");</script>
+        <?php        
+            }
+            else
+            {
+                echo "<script type='text/javascript'>alert('비밀번호가 틀립니다');</script>";
+            }
+            echo "<script> location.href = './community_4_1.html'; </script>";
+        ?>
+    </body>
+</html>

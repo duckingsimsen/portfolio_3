@@ -1,0 +1,340 @@
+*
+{
+    margin: 0;
+}
+body
+{
+    background-color: rgb(219, 236, 243);
+}
+#layout
+{
+    width: 70%;
+    min-width: 1080px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.Navigation_bar
+{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+.logo
+{
+    width: 10.8%;
+    height: 10.8%;
+}
+.club_img
+{
+    width: 100px;
+    height: 100px;
+}
+.menu
+{
+    width: 89.2%;
+}
+
+/*dropdown*/
+
+.menu .dropdown_1
+{
+    height: 50%;
+}
+
+.menu ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    background: #272727;
+}
+
+.menu ul li
+{
+    display: flex;
+    width: 100%;
+    line-height: 2.5;
+    justify-content: center;
+    position: relative;
+    list-style: none;
+}
+
+.menu ul li a
+{
+    color: #fff;
+    font-family: arial, Arial, Helvetica, sans-serif !important;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.menu li .dropdown_2 
+{
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    flex-wrap: wrap;
+    visibility: hidden;
+    transition: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.menu li:hover .dropdown_2
+{
+    visibility: visible;
+}
+
+.menu .dropdown_1 li .dropdown_3
+{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    flex-wrap: wrap;
+    transition: 0;
+    visibility: hidden;
+    z-index: 100;
+}
+
+.menu .dropdown_2 li:hover .dropdown_3
+{
+    left: 100%;
+    visibility: visible;
+}
+
+/*  */
+
+#main
+{
+    background-color: #fff;
+}
+
+#main .main_element
+{
+    padding: 10px 0 10px 0;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+}
+
+#main .sec_set
+{
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+#sty
+{
+    margin: 30px 0 0 0;
+    border: solid 1px;
+    width: 100%;
+    height: 20em;
+    text-align: left;
+}
+
+
+#main .Menu_1
+{
+    border: solid 1px;
+}
+
+#main .Menu_2
+{
+    border: solid 1px;
+    text-align: left;
+}
+
+#footer
+{
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-left: 34px;
+    text-align: left;
+    background-color: #fff;
+    height: 100px;
+    padding: 10px 0 0 0;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+}
+body {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+i{
+font-size: 60px;
+margin: 30px;
+text-align: center;
+}
+
+.facebook {
+color: blue;
+}
+.mail {
+color: orange;
+}
+.instagram {
+color: purple;
+}
+
+.sns_link
+{
+    display: flex;
+    margin: 0 auto 0 auto;
+    width: 80%;
+    flex-wrap: wrap;
+}
+#rectangle
+{
+    display: flex;
+    margin: 0 auto 0 auto;
+}
+/*.email_
+{
+    width: 50%;
+}
+.kakao_
+{
+    width: 50%;
+}
+.insta_
+{
+    width: 50%;
+}
+.facebook_
+{
+    width: 50%;
+}*/
+.rectangle_head
+{
+    border: solid 1px;
+    border-radius: 10px 0 0 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+.rectangle_body
+{
+    border: solid 1px;
+    width: 250px;
+    height: 50px;
+}
+.rectangle_foot
+{
+    border: solid 1px;
+    border-radius: 0 10px 10px 0;
+    width: 50px;
+    height: 50px;
+}
+.rectangle_head .email
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+.rectangle_head .email .icon
+{
+    background-image: url(./images/email.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+}
+.rectangle_head .kakaotalk
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: rgb(250, 255, 0);
+}
+.rectangle_head .kakaotalk .icon
+{
+    background-image: url(./images/kakaotalk_.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+}
+.rectangle_head .instagram_
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: rgb(206, 59, 108);
+}
+.rectangle_head .instagram_ .icon
+{
+    background-image: url(./images/instagram.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+}
+.rectangle_head .facebook
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: rgb(57, 125, 255);
+}
+.rectangle_head .facebook .icon
+{
+    background-image: url(./images/facebook.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+}
+.rectangle_body .blank_
+{
+    display: flex;
+    height: 25%;
+}
+.rectangle_body .name
+{
+    display: flex;
+}
+.link_
+{
+    line-height: 100%;
+}

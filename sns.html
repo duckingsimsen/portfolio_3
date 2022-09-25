@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <!--정해야 할것 배경색들, 프로그레스바색, 등등 여러가지 색에 대해서 반응형 최솟값 정하기(앱에서 보는경우때문에) 사이즈 조절-->
+        <link rel="stylesheet" href="./sns.css">
+        <script src="https://kit.fontawesome.com/0028405d0f.js" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ASSEM</title>
+        <link rel = "shortcut icon" href = "./images/assem_logo_background.ico" type = "image/x-icon" sizes = "16x16">
+        <link rel = "icon" href = "./images/assem_logo_background.ico" type = "immaeg/x-icon" sizes = "16x16">
+        <link rel = "stylesheet" href = "./about_1.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <script src = "bx\jquery-3.5.1.js" charset = "utf-8"></script>
+        <script src = "bx\jquery.bxslider.js" charset = "utf-8"></script>
+        <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    </head>
+    </head>
+    <body>
+        <div id = "layout">
+            <div id = "header">
+                <div class = "Navigation_bar">
+                    <a class = "logo">
+                        <img src = "./images/assem_logo.png">
+                    </a>
+                    <div class = "menu">
+                        <ul class="dropdown_menu">
+                            <li>
+                                <a href="#">About</a>
+                                <ul>
+                                  <li>
+                                    <a href = "./about_1.html" style = "font-family: arial, Arial, Helvetica, sans-serif !important; color: black; font-size: 15px;">동아리 소개</a>
+                                  </li>
+                                  <li>
+                                    <a href = "./about_2.html" style = "font-family: arial, Arial, Helvetica, sans-serif !important; color: black; font-size: 15px;">부서 소개</a>
+                                    <ul>
+                                      <li>
+                                        <a href = "./about_3_d.html" style = "font-family: arial, Arial, Helvetica, sans-serif !important; color: black; font-size: 15px;">개발부</a>
+                                        <br/>
+                                        <a href = "./about_3_s.html" style = "font-family: arial, Arial, Helvetica, sans-serif !important; color: black; font-size: 15px;">보안부</a>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                            </li>
+        
+                            <li>
+                                <a href="#">Community</a>
+                            </li>
+        
+                            <li>
+                                <a href = "#">Recruit</a>
+                            </li>
+        
+                            <li>
+                                <a href = "#">Reference</a>
+                            </li>
+                        </ul>
+                    </div>
+               </div>
+            </div>
+            <div id = "main">
+                <div class = "main_element">
+                    
+        
+                    <section class = "sec_set">
+                        
+    
+                        <section id = "sty" class = "Menu_4">
+                            <a>ASSEM에 대한 문의</a>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <body>
+                              <i class="fa-brands fa-facebook facebook"></i>
+      <i class="fa-solid fa-envelope mail"></i>
+      <i class="fa-brands fa-instagram-square instagram"></i>
+                            </body>
+
+                        </section>
+                    </section>
+                </div>
+            </div>
+           
+            <script type = "text/javascript">
+                $('.menu ul li').hover(function(){
+                $(this).children('ul').stop(true, false, true).slideToggle(100);
+                });
+            </script>
+
+            <footer id = "footer">
+                <!--SNS에 관한 링크, 정보들-->
+            </footer>
+        </div>
+    </body>
+</html>

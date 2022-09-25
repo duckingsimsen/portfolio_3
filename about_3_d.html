@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ASSEM</title>
+        <link rel = "shortcut icon" href = "./images/assem_logo_background.ico" type = "image/x-icon" sizes = "16x16">
+        <link rel = "icon" href = "./images/assem_logo_background.ico" type = "immaeg/x-icon" sizes = "16x16">
+        <link rel = "stylesheet" href = "about_3_d.css">
+        <script src = "bx\jquery-3.5.1.js" charset = "utf-8"></script>
+        <script src = "bx\jquery.bxslider.js" charset = "utf-8"></script>
+        <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+        <div id = layout>
+            <div id = "header">
+                <div class = "Navigation_bar">
+                    <a class = "logo" href = "club.html">
+                        <img class = "club_img" src = "images/assem_logo.png">
+                    </a>
+                    <div class = "menu">
+                        <ul class = "dropdown_1">
+                            <li><a href = "#">About</a>
+                                <ul class = "dropdown_2">
+                                    <li><a href = "./about_1.html">동아리 소개</a></li>
+                                    <li><a href = "./about_2.html">부서 소개</a>
+                                        <ul class = "dropdown_3">
+                                            <li><a href = "./about_3_d.html">개발부</a></li>
+                                            <li><a href = "./about_3_s.html">보안부</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href = "./Community_main.html">Community</a>
+                                <ul class = "dropdown_2">
+                                    <li><a href = "./noticeTest.html">공지사항</a></li>
+                                    <li><a href = "./Community.html">종합 게시판</a>
+                                        <ul class = "dropdown_3">
+                                            <li><a href = "./community_4_1.html">자유게시판</a></li>
+                                            <li><a href = "./community_4_2.html">개발부 게시판</a></li>
+                                            <li><a href = "./community_4_3.html">보안부 게시판</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href = "#">Recruit</a></li>
+                            <li><a href = "#">Reference Room</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id = "main">
+                <div id = "introduce">
+                    <div class = "first_section">
+                        <section class = "department">
+                            <p style = "font-size: 40pt"><b>개발부</b></p>
+                        </section>
+                        <section class = "comment">
+                            <p style = "font-size: 25px">짧은 코맨트</p>
+                        </section>
+                    </div>
+                    <div class = "second_section">
+                        <ul class = "content">
+                            <li id = "defual" class = "tab" onclick = "openMenu('web')"><a>웹 개발(백/프론트 엔드)</a></li>
+                            <li class = "tab" onclick = "openMenu('app')"><a>앱 개발(Android/IOS)</a></li>
+                            <li class = "tab" onclick = "openMenu('ai')"><a>Ai 개발</a></li>
+                        </ul>
+                        <div class = "introduce_page">
+                            <!-- https://mash-up.kr/ -->
+                            <fieldset id = "web" class = "web" style = "width: 100%; text-align: center;">
+                                웹 개발부에 대한 소개
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                            </fieldset>
+                            <fieldset id = "app" class = "introduction" style = "width: 100%; text-align: center;">
+                                앱 개발부에 대한 소개
+                            </fieldset>
+                            <fieldset id = "ai" class = "introduction" style = "width: 100%; text-align: center;">
+                                ai 개발부에 대한 소개
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function openMenu(str)
+            {
+                i = 0;
+                col = null;
+
+                switch (str)
+                {
+                    case "web": i = 0; break;
+                    case "app": i = 1; break;
+                    case "ai": i = 2; break;
+                }
+
+                for (let j = 0; j <= 2; j++)
+                {
+                    col = document.querySelectorAll('fieldset')[j];
+                    col.className = "introduction";
+                }
+
+                col = document.querySelectorAll('fieldset')[i];
+                col.className = str;
+            }
+        </script>
+    </body>
+</html>

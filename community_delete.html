@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script language='javascript'>
+            var write_ = confirm('삭제하시겠습니까??');
+            var factpw = prompt('삭제 하실거면 비밀번호 입력하세요');
+            document.cookie="pass=" + factpw;
+        </script>
+
+        <?php
+            require_once __DIR__ . '/db.php';
+            define('db', true);
+
+            $bno = $_GET["idx"];
+
+            $getpw = "SELECT pw FROM club_table WHERE idx = '".$bno."';";
+            $sql_ = mysqli_query($db, $getpw);
+
+            $row = mysqli_fetch_array($sql_);
+            $hash = $row["pw"];
+
+            if(password_verify($_COOKIE['pass'], $hash))
+            {
+                $sql_1 = "DELETE FROM club_table WHERE idx = '".$bno."';";
+                $sql_2 = mysqli_query($db, $sql_1);
+            }
+            else
+            {
+        ?>
+                <script> confirm("비밀번호가 틀렸습니다");</script>
+        <?php
+            }
+            echo "<script> location.href = './community_4_1.html'; </script>";
+        ?>
+    </body>
+</html>

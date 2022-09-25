@@ -1,0 +1,273 @@
+@charset "utf-8";
+*
+{
+    margin: 0;
+}
+body
+{
+    background-color: rgb(219, 236, 243);
+}
+li
+{
+    list-style: none;
+}
+
+#layout
+{
+    width: 70%;
+    min-width: 1080px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.Navigation_bar
+{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+.logo
+{
+    width: 10.8%;
+    height: 10.8%;
+}
+.club_img
+{
+    width: 100px;
+    height: 100px;
+}
+.menu
+{
+    width: 89.2%;
+}
+
+/*dropdown*/
+
+.menu .dropdown_1
+{
+    height: 50%;
+}
+
+.menu ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    background: #272727;
+}
+
+.menu ul li
+{
+    display: flex;
+    width: 100%;
+    line-height: 2.5;
+    justify-content: center;
+    position: relative;
+    list-style: none;
+}
+
+.menu ul li a
+{
+    color: #fff;
+    font-family: arial, Arial, Helvetica, sans-serif !important;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.menu li .dropdown_2 
+{
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    flex-wrap: wrap;
+    visibility: hidden;
+    transition: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.menu li:hover .dropdown_2
+{
+    visibility: visible;
+}
+
+.menu .dropdown_1 li .dropdown_3
+{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    flex-wrap: wrap;
+    transition: 0;
+    visibility: hidden;
+    z-index: 100;
+}
+
+.menu .dropdown_2 li:hover .dropdown_3
+{
+    left: 100%;
+    visibility: visible;
+}
+
+/*  */
+
+/* 각 게시판 가는 부분 */
+
+#community_main
+{   
+    width: 80%;
+    margin: 2% auto 0 auto;
+}
+
+#community_main .select_menu
+{
+    display: flex;
+    flex-flow: wrap;
+}
+
+#community_main .select_menu > li
+{
+    border: solid 1px;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    margin: 0px !important;
+    font-size: 100%;
+}
+
+.select_menu > li > a
+{
+    color: #000000;
+    padding: 15px;
+    vertical-align: middle;
+}
+
+/*게시판 table 전체 */
+
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    word-wrap: break-word;
+    word-break: keep-all;
+    font-size: 100%;
+    color: #1c1c1c;
+    line-height: 1.25;
+    font-family: 'Noto Sans KR', AppleGothic, Helvetica, sans-serif;
+}
+
+.fl
+{
+	float:left;
+}
+
+.tc
+{
+	text-align:center;
+}
+
+.list-table
+{
+	margin-top: 40px;
+}
+.list-table thead th
+{
+	height:40px;
+	border-top:2px solid #09C;
+	border-bottom:1px solid #CCC;
+	font-weight: bold;
+	font-size: 17px;
+}
+.list-table tbody td
+{
+	text-align:center;
+	padding:10px 0;
+	border-bottom:1px solid #CCC; height:20px;
+	font-size: 14px 
+}
+#write_btn
+{
+	position: absolute;
+	margin-top:20px;
+	right: 30%;
+}
+
+caption
+{
+    display: none;
+}
+
+.bulletin_board thead th
+{
+    font-size: 100%;
+    color: #000;
+    font-weight: normal;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #e9e9e9;
+	position: relative;
+}
+
+
+.tb-center
+{
+    text-align: center;
+}
+
+.tb-left, .tb-center, .tb-right
+{
+    padding: 0 10px;
+}
+
+/* 게시판 선택 */
+
+.select_menu li a.on
+{
+    border-radius: 9px 9px 0 0;
+    background-color: #3330fcaf;
+    color:#fff;
+}
+
+/*게시판 댓글 갯수*/
+.re_ct
+{
+    font-weight:bold;
+    color:blue;
+}
+/* 페이지 넘버링 */
+#page_num
+{
+	font-size: 14px;
+	margin-left: 260px;
+	margin-top:30px; 
+}
+#page_num ul li
+{
+	float: left;
+	margin-left: 10px; 
+	text-align: center;
+}
+.fo_re
+{
+	font-weight: bold;
+	color:red;
+}
+
+/*serch*/
+.fo_re
+{
+	font-weight: bold;
+	color:red;
+	margin-left: 15px; 
+}
+#search_box
+{
+	margin-top:30px;
+	text-align: right;
+}
+#search_box2
+{
+	text-align: center;
+	margin-top: 30px;
+}

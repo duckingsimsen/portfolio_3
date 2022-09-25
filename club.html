@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <!--정해야 할것 배경색들, 프로그레스바색, 등등 여러가지 색에 대해서 반응형 최솟값 정하기(앱에서 보는경우때문에) 사이즈 조절-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ASSEM</title>
+        <link rel = "shortcut icon" href = "./images/assem_logo_background.ico" type = "image/x-icon" sizes = "16x16">
+        <link rel = "icon" href = "./images/assem_logo_background.ico" type = "immaeg/x-icon" sizes = "16x16">
+        <link rel = "stylesheet" href = "club.css">
+        <link rel = "stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <script src = "bx\jquery-3.5.1.js" charset = "utf-8"></script>
+        <script src = "bx\jquery.bxslider.js" charset = "utf-8"></script>
+        <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    </head>
+    </head>
+    <body>
+        <div id = "layout">
+            <div id = "header">
+                <div class = "Navigation_bar">
+                    <a class = "logo" href = "club.html">
+                        <img class = "club_img" src = "images/assem_logo.png">
+                    </a>
+                    <div class = "menu">
+                        <ul class = "dropdown_1">
+                            <li><a href = "#">About</a>
+                                <ul class = "dropdown_2">
+                                    <li><a href = "./about_1.html">동아리 소개</a></li>
+                                    <li><a href = "./about_2.html">부서 소개</a>
+                                        <ul class = "dropdown_3">
+                                            <li><a href = "./about_3_d.html">개발부</a></li>
+                                            <li><a href = "./about_3_s.html">보안부</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href = "./Community_main.html">Community</a>
+                                <ul class = "dropdown_2">
+                                    <li><a href = "./noticeTest.html">공지사항</a></li>
+                                    <li><a href = "./Community.html">종합 게시판</a>
+                                        <ul class = "dropdown_3">
+                                            <li><a href = "./community_4_1.html">자유게시판</a></li>
+                                            <li><a href = "./community_4_2.html">개발부 게시판</a></li>
+                                            <li><a href = "./community_4_3.html">보안부 게시판</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href = "#">Recruit</a></li>
+                            <li><a href = "#">Reference Room</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id = "main">
+                <div class = "main_element">
+                    <div class = "swiper">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">Slide 1</div>
+                              <div class="swiper-slide">Slide 2</div>
+                              <div class="swiper-slide">Slide 3</div>
+                              <div class="swiper-slide">Slide 4</div>
+                              <div class="swiper-slide">Slide 5</div>
+                              <div class="swiper-slide">Slide 6</div>
+                              <div class="swiper-slide">Slide 7</div>
+                              <div class="swiper-slide">Slide 8</div>
+                              <div class="swiper-slide">Slide 9</div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                    </div>
+        
+                    <section class = "sec_set">
+                        <section class = "Menu_1">
+                            <a>동아리게 관하여
+                                <!--안에다가 간단하게 설립된 년도, 계기, 등 뭐 넣을거 작게-->
+                            </a>
+                        </section>
+            
+                        <section class = "Menu_2">
+                            <a>공지사항</a>
+                        </section>
+            
+                        <section id = "sty" class = "Menu_3">
+                            <a>자유게시판</a>
+                        </section>
+    
+                        <section id = "sty" class = "Menu_4">
+                            <a>자료실</a>
+                        </section>
+                        <!--다음 회의때 메인페이지 배치에 관해서 살짝 물어보고 시작하기-->
+                    </section>
+                </div>
+            </div>
+
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                  pagination: {
+                    el: ".swiper-pagination",
+                    type: "progressbar",
+                  },
+                  navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                  },
+          
+                  /*무한루프*/
+                  loop: true,
+                });
+            </script>
+                         
+            <footer id = "footer">
+                <!--SNS에 관한 링크, 정보들-->
+            </footer>
+        </div>
+    </body>
+</html>
